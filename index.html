@@ -26,6 +26,15 @@
 		<link rel="stylesheet" href="assets/css/font-awesome.css">
 		<link rel="stylesheet" href="assets/css/styles-1.css">
 
+		<style>
+		@media screen and (max-width: 1024px) {
+    .profile_pic {
+        display: none !important;
+    }
+		}
+		</style>
+
+
 		<!-- ==============================================
 		Fonts
 		=============================================== -->
@@ -108,7 +117,7 @@
 				</div>
 
 				<div class="header-img scrollimation fade-up d1">
-					<img class="img-responsive" src="assets/images/header-img.png" alt="" />
+					<img class="img-responsive profile_pic" src="assets/images/header-img.png" alt="" />
 				</div>
 
 			</div>
@@ -441,7 +450,7 @@
 							<img class="img-responsive project-image" src="assets/images/projects/thumb-6.jpg"  alt="">
 
 							<div class="hover-title">
-								<h2 class="project-title">Project with Slider</h2><!--Project Title -->
+								<h2 class="project-title">Project with Slider</h2><!--Project Title
 								<p>Modern Business Card</p><!--Project Subtitle
 							</div>
 
@@ -864,6 +873,15 @@
 		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/scripts.js"></script>
 
+		<script type="text/javascript">
+		//JavaScript goes here
+
+		/*if ($(window).width() < 960) {
+   		$("#profile_pic").hide();
+		}else{
+			$("#profile_pic").show();
+		}*/
+		</script>
 	</body>
 
 </html>
