@@ -878,16 +878,30 @@
 		$(document).ready(function(){
    if ($(window).width() < 1024) {
 		 $("#profile_image").attr('align','center');
+
+		 if ($(window).width() < 600) {
+			 $("#profile_image").attr('width','350');
+			 $("#profile_image").attr('height','350');
+		 }
+
 	 }else{
 		 $("#profile_image").attr('align','right');
+		 $("#profile_image").attr('width','415');
+		 $("#profile_image").attr('height','415');
 	 }
 		});
 
 		$(window).on('resize', function(){
 			if ($(window).width() < 1024) {
 	 		 $("#profile_image").attr('align','center');
+			 if ($(window).width() < 600) {
+				 $("#profile_image").attr('width','350');
+				 $("#profile_image").attr('height','350');
+			 }
 	 	 }else{
 	 		 $("#profile_image").attr('align','right');
+			 $("#profile_image").attr('width','415');
+			 $("#profile_image").attr('height','415');
 	 	 }
 });
 		</script>
